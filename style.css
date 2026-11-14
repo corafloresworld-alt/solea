@@ -317,13 +317,6 @@
   object-fit: cover;
 }
 
-.home-page .nav-dropdown__media .reference-label {
-  right: 6px;
-  bottom: 6px;
-  padding: 3px 6px;
-  font-size: 0.52rem;
-}
-
 .home-page .nav-dropdown__card-copy {
   padding: 12px;
 }
@@ -549,29 +542,6 @@
   text-wrap: pretty;
 }
 
-.home-page .reference-label {
-  position: absolute;
-  z-index: 2;
-  right: 10px;
-  bottom: 10px;
-  padding: 4px 9px;
-  border: 1px solid rgba(61, 42, 50, 0.12);
-  border-radius: 999px;
-  background: rgba(252, 244, 237, 0.9);
-  color: var(--solea-ink);
-  font-family: "Euclid Circular A", Arial, sans-serif;
-  font-size: 0.58rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.home-page .hero__content > .reference-label {
-  right: auto;
-  bottom: 22px;
-  left: 0;
-}
 
 .home-page .section-pad {
   padding: clamp(32px, 2.6vw, 42px) max(32px, calc((100vw - var(--page-width)) / 2));
@@ -1089,30 +1059,11 @@
   transition: transform 350ms ease;
 }
 
-.home-page .places-card:hover .places-card__media:not(.is-placeholder) img {
+.home-page .places-card:hover .places-card__media img {
   transform: scale(1.025);
 }
 
-.home-page .places-card__media.is-placeholder img {
-  display: none;
-}
 
-.home-page .places-card__placeholder {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  padding: 20px;
-  color: rgba(61, 42, 50, 0.62);
-  font-size: 0.86rem;
-  font-weight: 500;
-  letter-spacing: 0.035em;
-  text-align: center;
-}
-
-.home-page .places-card__media:not(.is-placeholder) .places-card__placeholder {
-  display: none;
-}
 
 .home-page .places-card__caption {
   min-height: 150px;
@@ -1680,10 +1631,6 @@
     font-size: 1rem;
   }
 
-  .home-page .hero__content > .reference-label {
-    bottom: 16px;
-  }
-
   .home-page .section-pad {
     padding: 30px 20px;
   }
@@ -1840,13 +1787,6 @@
 
   .home-page .gallery-strip figure {
     height: 172px;
-  }
-
-  .home-page .gallery-strip .reference-label {
-    right: 5px;
-    bottom: 5px;
-    padding: 3px 6px;
-    font-size: 0.5rem;
   }
 
   .home-page .gallery-section h2 {
