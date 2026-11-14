@@ -1,1 +1,370 @@
+<!doctype html>
+<html lang="es" class="js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FCF4ED">
+  <meta name="description" content="Una experiencia SOLÉA para eventos de empresa, lanzamientos, inauguraciones, seminarios y activaciones de marca.">
+  <title>Eventos profesionales — SOLÉA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css?v=sticky-navigation-hero-20261113">
+  <link rel="stylesheet" href="corporateevents.css?v=corporate-hero-layout-20261113">
+</head>
+<body class="home-page corporate-page">
+  <header class="site-header" id="top">
+    <div class="site-header__inner">
+      <a class="brand" href="../index.html#top" aria-label="SOLÉA — inicio" data-i18n-aria="homeLabel">
+        <img src="../assets/images/LOGO_PRINCIPAL.png" alt="SOLÉA" width="1128" height="908">
+      </a>
 
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-i18n-aria="menuOpenLabel">
+        <span class="menu-toggle__lines" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="visually-hidden" data-i18n="menuLabel">Menú</span>
+      </button>
+
+      <div class="primary-navigation" id="primary-navigation">
+        <nav class="main-nav" aria-label="Navegación principal" data-i18n-aria="mainNavigationLabel">
+          <a href="../index.html#concept" data-i18n="navConcept">El concepto</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown__trigger is-current" id="events-menu-trigger" type="button" aria-expanded="false" aria-controls="events-menu" data-i18n-aria="eventsMenuLabel" aria-current="page">
+              <span data-i18n="navEvents">Eventos</span><span class="nav-dropdown__chevron" aria-hidden="true">⌄</span>
+            </button>
+            <div class="nav-dropdown__panel" id="events-menu" role="group" aria-labelledby="events-menu-trigger" hidden>
+              <article class="nav-dropdown__card">
+                <figure class="nav-dropdown__media">
+                  <img src="../assets/images/private-event-reference.png" alt="Visual ilustrativo de una celebración privada" data-i18n-alt="altPrivateMenu" width="640" height="252" loading="lazy">
+                  <figcaption class="reference-label" data-i18n="referenceLabel">Visual de referencia</figcaption>
+                </figure>
+                <div class="nav-dropdown__card-copy">
+                  <h2 data-i18n="privateMenuTitle">Eventos privados</h2>
+                  <a class="nav-dropdown__link" href="../privateevents/" data-i18n="privateMenuButton">Ver eventos privados</a>
+                </div>
+              </article>
+              <article class="nav-dropdown__card">
+                <figure class="nav-dropdown__media">
+                  <img src="../assets/images/professional-event-reference.png" alt="Visual ilustrativo de un evento profesional" data-i18n-alt="altProfessionalMenu" width="622" height="210" loading="lazy">
+                  <figcaption class="reference-label" data-i18n="referenceLabel">Visual de referencia</figcaption>
+                </figure>
+                <div class="nav-dropdown__card-copy">
+                  <h2 data-i18n="professionalMenuTitle">Eventos profesionales</h2>
+                  <a class="nav-dropdown__link" href="./" aria-current="page" data-i18n="professionalMenuButton">Ver eventos profesionales</a>
+                </div>
+              </article>
+            </div>
+          </div>
+          <a href="../popupspot/" data-i18n="navHost">Acoge SOLÉA</a>
+          <a href="../contact/" data-i18n="navContact">Contacto</a>
+        </nav>
+
+        <div class="site-header__actions">
+          <a class="button button--small button--primary header-quote" href="../contact/#contact-form-section" data-i18n="quoteButton">Solicitar presupuesto</a>
+          <div class="language-switch" role="group" aria-label="Idioma / Language" data-i18n-aria="languageLabel">
+            <button type="button" class="language-switch__button is-active" data-language="es" aria-pressed="true">ES</button>
+            <span aria-hidden="true">|</span>
+            <button type="button" class="language-switch__button" data-language="en" aria-pressed="false">EN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="private-hero">
+      <img class="private-hero__image" src="assets/images/professional-hero-generated.png" alt="Imagen ilustrativa generada de dos profesionales conversando durante un evento con helado cremoso; no es una fotografía real de un evento SOLÉA." data-i18n-alt="altHero" width="1672" height="941" fetchpriority="high">
+      <span class="private-visual-note" data-i18n="generatedNote">Imagen ilustrativa generada</span>
+    </div>
+    <section class="private-hero__content" aria-labelledby="corporate-title">
+      <h1 id="corporate-title" data-i18n="heroTitle">EVENTOS PROFESIONALES</h1>
+      <p data-i18n="heroTagline">Una propuesta gastronómica para eventos de empresa, lanzamientos y encuentros profesionales.</p>
+    </section>
+
+    <section class="private-intro" id="corporate-intro" aria-label="Sobre los eventos profesionales" data-i18n-aria="introLabel">
+      <p data-i18n="introCopy">SOLÉA acompaña encuentros profesionales como jornadas de puertas abiertas, lanzamientos de producto, inauguraciones, seminarios, actividades de team building y activaciones de marca.</p>
+    </section>
+
+    <section class="event-types" id="event-types" aria-label="Formatos de eventos profesionales" data-i18n-aria="eventTypesLabel">
+      <div class="event-types__grid">
+        <figure class="event-type event-type--open-house">
+          <div class="event-type__image-wrap event-type__image-wrap--open-house" role="img" aria-label="Ilustración generada de una jornada de puertas abiertas profesional" data-i18n-aria="altOpenHouse">
+            <span class="private-visual-note" data-i18n="generatedNote">Imagen ilustrativa generada</span>
+          </div>
+          <figcaption data-i18n="eventOpenHouse">Jornadas de puertas abiertas</figcaption>
+        </figure>
+        <figure class="event-type event-type--launch">
+          <div class="event-type__image-wrap event-type__image-wrap--launch" role="img" aria-label="Ilustración generada de un lanzamiento de producto" data-i18n-aria="altLaunch">
+            <span class="private-visual-note" data-i18n="generatedNote">Imagen ilustrativa generada</span>
+          </div>
+          <figcaption data-i18n="eventLaunch">Lanzamientos e inauguraciones</figcaption>
+        </figure>
+        <figure class="event-type event-type--seminar">
+          <div class="event-type__image-wrap event-type__image-wrap--seminar" role="img" aria-label="Ilustración generada de un seminario y una actividad de equipo" data-i18n-aria="altSeminar">
+            <span class="private-visual-note" data-i18n="generatedNote">Imagen ilustrativa generada</span>
+          </div>
+          <figcaption data-i18n="eventSeminar">Seminarios y team building</figcaption>
+        </figure>
+        <figure class="event-type event-type--activation">
+          <div class="event-type__image-wrap event-type__image-wrap--activation" role="img" aria-label="Ilustración generada de una activación de marca al aire libre" data-i18n-aria="altActivation">
+            <span class="private-visual-note" data-i18n="generatedNote">Imagen ilustrativa generada</span>
+          </div>
+          <figcaption data-i18n="eventActivation">Activaciones de marca</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="formula-section" id="formulas" aria-labelledby="formulas-title">
+      <div class="formula-section__heading">
+        <img class="formula-section__symbol" src="../assets/images/LOGO_SYMBOLE_MAIN.png" alt="" width="160" height="145" loading="lazy">
+        <h2 id="formulas-title" data-i18n="formulasTitle">Tres propuestas para sorprender a tus invitados.</h2>
+      </div>
+
+      <div class="formula-grid">
+        <article class="formula-card">
+          <figure class="formula-card__photo">
+            <img src="../privateevents/assets/images/formula-original-generated.png" alt="Imagen ilustrativa generada de un helado cremoso de fruta en un vaso con fresas" data-i18n-alt="altOriginal" width="614" height="614" loading="lazy">
+            <span class="private-visual-note" data-i18n="generatedNote">Imagen ilustrativa generada</span>
+          </figure>
+          <div class="formula-card__content">
+            <h3>SOLÉA ORIGINAL</h3>
+            <p class="formula-card__description" data-i18n="originalDescription">Helado cremoso de fruta natural, preparado al momento.</p>
+            <ul class="formula-features">
+              <li><img src="../assets/icons/recipe.svg" alt="" width="24" height="24" loading="lazy"><span data-i18n="baseFeature">Base a elegir: leche o vegetal.</span></li>
+              <li><img src="../assets/icons/fruit.svg" alt="" width="24" height="24" loading="lazy"><span data-i18n="fruitFeature">Hasta 5 frutas de temporada.</span></li>
+              <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 11h18l-2 16H9L7 11Zm4 0 1-5h8l1 5M12 15v8m8-8v8"/></svg><span data-i18n="serveFeature">Servido en vaso o en cucurucho.</span></li>
+            </ul>
+            <aside class="formula-option" aria-label="Opción disponible" data-i18n-aria="optionLabel">
+              <svg class="formula-option__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M7 11h18l-2 16H9L7 11Zm4 0 1-5h8l1 5M12 15v8m8-8v8"/></svg>
+              <div><h4 data-i18n="optionalTitle">Opcional</h4><p data-i18n="optionalCopy">Tarrinas personalizadas con el nombre o los colores de tu evento.</p></div>
+            </aside>
+          </div>
+        </article>
+
+        <article class="formula-card">
+          <figure class="formula-card__photo">
+            <img src="../privateevents/assets/images/formula-signature-generated.png" alt="Imagen ilustrativa generada de un helado cremoso de fruta con toppings" data-i18n-alt="altSignature" width="614" height="614" loading="lazy">
+            <span class="private-visual-note" data-i18n="generatedNote">Imagen ilustrativa generada</span>
+          </figure>
+          <div class="formula-card__content">
+            <h3>SOLÉA SIGNATURE</h3>
+            <p class="formula-card__description" data-i18n="signatureDescription">Una creación más especial, con toppings y una decoración original.</p>
+            <ul class="formula-features">
+              <li><img src="../assets/icons/recipe.svg" alt="" width="24" height="24" loading="lazy"><span data-i18n="baseFeature">Base a elegir: leche o vegetal.</span></li>
+              <li><img src="../assets/icons/fruit.svg" alt="" width="24" height="24" loading="lazy"><span data-i18n="fruitFeature">Hasta 5 frutas de temporada.</span></li>
+              <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 11h18l-2 16H9L7 11Zm4 0 1-5h8l1 5M12 15v8m8-8v8"/></svg><span data-i18n="serveFeature">Servido en vaso o en cucurucho.</span></li>
+              <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m16 4 3.4 7 7.7 1.1-5.6 5.5 1.3 7.8-6.8-3.7-6.8 3.7 1.3-7.8-5.6-5.5 7.7-1.1L16 4Z"/></svg><span data-i18n="toppingsFeature">Toppings gourmet a elegir.</span></li>
+              <li><img src="../assets/icons/experience.svg" alt="" width="24" height="24" loading="lazy"><span data-i18n="decorFeature">Decoración especial a elegir: estilo de chocolate, detalles comestibles o una creación decorativa.</span></li>
+            </ul>
+            <aside class="formula-option" aria-label="Opción disponible" data-i18n-aria="optionLabel">
+              <svg class="formula-option__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M7 11h18l-2 16H9L7 11Zm4 0 1-5h8l1 5M12 15v8m8-8v8"/></svg>
+              <div><h4 data-i18n="optionalTitle">Opcional</h4><p data-i18n="optionalCopy">Tarrinas personalizadas con el nombre o los colores de tu evento.</p></div>
+            </aside>
+          </div>
+        </article>
+
+        <article class="formula-card">
+          <figure class="formula-card__photo">
+            <img src="../privateevents/assets/images/formula-duo-generated.png" alt="Imagen ilustrativa generada de un helado cremoso en vaso acompañado de una pieza de repostería" data-i18n-alt="altDuo" width="614" height="614" loading="lazy">
+            <span class="private-visual-note" data-i18n="generatedNote">Imagen ilustrativa generada</span>
+          </figure>
+          <div class="formula-card__content">
+            <h3>SOLÉA DUO</h3>
+            <p class="formula-card__description" data-i18n="duoDescription">Una propuesta irresistible que combina una pieza de repostería con nuestro helado cremoso de fruta natural, preparado al momento.</p>
+            <ul class="formula-features">
+              <li><img src="../assets/icons/preparation.svg" alt="" width="24" height="24" loading="lazy"><span data-i18n="creamyFeature">Helado cremoso de fruta natural.</span></li>
+              <li><img src="../assets/icons/recipe.svg" alt="" width="24" height="24" loading="lazy"><span data-i18n="baseFeature">Base a elegir: leche o vegetal.</span></li>
+              <li><img src="../assets/icons/fruit.svg" alt="" width="24" height="24" loading="lazy"><span data-i18n="fruitFeature">Hasta 5 frutas de temporada.</span></li>
+              <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 17h24l-2 10H6L4 17Zm2-3 3-7h14l3 7M10 10h12m-9-3 1 7m5-7-1 7"/></svg><span data-i18n="pastryFeature">Una pieza de repostería a elegir: cookie, donut u otra opción dulce según la selección.</span></li>
+              <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m16 4 3.4 7 7.7 1.1-5.6 5.5 1.3 7.8-6.8-3.7-6.8 3.7 1.3-7.8-5.6-5.5 7.7-1.1L16 4Z"/></svg><span data-i18n="duoToppingFeature">Toppings a elegir para darle el toque final.</span></li>
+            </ul>
+            <aside class="formula-option" aria-label="Opción disponible" data-i18n-aria="optionLabel">
+              <svg class="formula-option__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M7 11h18l-2 16H9L7 11Zm4 0 1-5h8l1 5M12 15v8m8-8v8"/></svg>
+              <div><h4 data-i18n="optionalTitle">Opcional</h4><p data-i18n="optionalCopy">Tarrinas personalizadas con el nombre o los colores de tu evento.</p></div>
+            </aside>
+          </div>
+        </article>
+      </div>
+
+      <div class="capacity-note">
+        <span class="capacity-note__rule" aria-hidden="true"></span>
+        <svg viewBox="0 0 48 40" aria-hidden="true"><circle cx="24" cy="9" r="5"/><circle cx="10" cy="13" r="4"/><circle cx="38" cy="13" r="4"/><path d="M14 35v-5a10 10 0 0 1 20 0v5H14Zm-2-15a7 7 0 0 0-7 7v5h7m24-12a7 7 0 0 1 7 7v5h-7"/></svg>
+        <p><strong data-i18n="capacityTitle">Para eventos de 30 a 200 invitados,</strong> <span data-i18n="capacityCopy">según el formato y las condiciones del servicio.</span></p>
+        <span class="capacity-note__rule" aria-hidden="true"></span>
+      </div>
+      <a class="button button--primary private-cta" href="../contact/" data-i18n="quoteButton">Solicitar presupuesto</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <a class="site-footer__brand" href="../index.html#top" aria-label="SOLÉA — inicio" data-i18n-aria="homeLabel">
+        <img src="../assets/images/LOGO_PRINCIPAL.png" alt="SOLÉA" width="1128" height="908" loading="lazy">
+      </a>
+      <nav class="footer-nav" aria-label="Navegación del pie de página" data-i18n-aria="footerNavigationLabel">
+        <a href="../index.html#concept" data-i18n="navConcept">El concepto</a>
+        <a href="../index.html#offer" data-i18n="navEvents">Eventos</a>
+        <a href="../popupspot/" data-i18n="navHost">Acoge SOLÉA</a>
+        <a href="../contact/" data-i18n="navContact">Contacto</a>
+      </nav>
+      <div class="site-footer__social social-links">
+        <a href="https://www.instagram.com/solea_moments_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de SOLÉA" data-i18n-aria="instagramLabel"><img src="../assets/icons/instagram.svg" alt="" width="24" height="24"></a>
+        <a href="https://www.tiktok.com/@solea_moments_" target="_blank" rel="noopener noreferrer" aria-label="TikTok de SOLÉA" data-i18n-aria="tiktokLabel"><img src="../assets/icons/tiktok.svg" alt="" width="24" height="24"></a>
+      </div>
+      <div class="language-switch language-switch--footer" role="group" aria-label="Idioma / Language" data-i18n-aria="languageLabel">
+        <button type="button" class="language-switch__button is-active" data-language="es" aria-pressed="true">ES</button>
+        <span aria-hidden="true">|</span>
+        <button type="button" class="language-switch__button" data-language="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const copy = {
+      es: {
+        title: 'Eventos profesionales — SOLÉA',
+        description: 'Una experiencia SOLÉA para eventos de empresa, lanzamientos, inauguraciones, seminarios y activaciones de marca.',
+        menuLabel: 'Menú', menuOpenLabel: 'Abrir o cerrar el menú', homeLabel: 'SOLÉA — inicio', languageLabel: 'Idioma',
+        instagramLabel: 'Instagram de SOLÉA', tiktokLabel: 'TikTok de SOLÉA', mainNavigationLabel: 'Navegación principal',
+        footerNavigationLabel: 'Navegación del pie de página', navConcept: 'El concepto', navEvents: 'Eventos',
+        navHost: 'Acoge SOLÉA', navContact: 'Contacto', eventsMenuLabel: 'Abrir el menú de eventos',
+        privateMenuTitle: 'Eventos privados', privateMenuButton: 'Ver eventos privados',
+        professionalMenuTitle: 'Eventos profesionales', professionalMenuButton: 'Ver eventos profesionales',
+        quoteButton: 'Solicitar presupuesto', referenceLabel: 'Visual ilustrativo', generatedNote: 'Imagen ilustrativa generada',
+        heroTitle: 'EVENTOS PROFESIONALES', heroTagline: 'Una propuesta gastronómica para eventos de empresa, lanzamientos y encuentros profesionales.',
+        introLabel: 'Sobre los eventos profesionales',
+        introCopy: 'SOLÉA acompaña encuentros profesionales como jornadas de puertas abiertas, lanzamientos de producto, inauguraciones, seminarios, actividades de team building y activaciones de marca.',
+        eventTypesLabel: 'Formatos de eventos profesionales', eventOpenHouse: 'Jornadas de puertas abiertas',
+        eventLaunch: 'Lanzamientos e inauguraciones', eventSeminar: 'Seminarios y team building',
+        eventActivation: 'Activaciones de marca', formulasTitle: 'Tres propuestas para sorprender a tus invitados.',
+        originalDescription: 'Helado cremoso de fruta natural, preparado al momento.',
+        signatureDescription: 'Una creación más especial, con toppings y una decoración original.',
+        duoDescription: 'Una propuesta irresistible que combina una pieza de repostería con nuestro helado cremoso de fruta natural, preparado al momento.',
+        baseFeature: 'Base a elegir: leche o vegetal.', fruitFeature: 'Hasta 5 frutas de temporada.',
+        serveFeature: 'Servido en vaso o en cucurucho.', toppingsFeature: 'Toppings gourmet a elegir.',
+        decorFeature: 'Decoración especial a elegir: estilo de chocolate, detalles comestibles o una creación decorativa.',
+        creamyFeature: 'Helado cremoso de fruta natural.',
+        pastryFeature: 'Una pieza de repostería a elegir: cookie, donut u otra opción dulce según la selección.',
+        duoToppingFeature: 'Toppings a elegir para darle el toque final.', optionLabel: 'Opción disponible',
+        optionalTitle: 'Opcional', optionalCopy: 'Tarrinas personalizadas con el nombre o los colores de tu evento.',
+        capacityTitle: 'Para eventos de 30 a 200 invitados,', capacityCopy: 'según el formato y las condiciones del servicio.',
+        altPrivateMenu: 'Visual ilustrativo de una celebración privada', altProfessionalMenu: 'Visual ilustrativo de un evento profesional',
+        altHero: 'Imagen ilustrativa generada de dos profesionales conversando durante un evento con helado cremoso; no es una fotografía real de un evento SOLÉA.',
+        altOpenHouse: 'Ilustración generada de una jornada de puertas abiertas profesional; no es una fotografía real.',
+        altLaunch: 'Ilustración generada de un lanzamiento de producto; no es una fotografía real.',
+        altSeminar: 'Ilustración generada de un seminario y una actividad de equipo; no es una fotografía real.',
+        altActivation: 'Ilustración generada de una activación de marca al aire libre; no es una fotografía real.',
+        altOriginal: 'Imagen ilustrativa generada de un helado cremoso de fruta en un vaso con fresas',
+        altSignature: 'Imagen ilustrativa generada de un helado cremoso de fruta con toppings',
+        altDuo: 'Imagen ilustrativa generada de un helado cremoso en vaso acompañado de una pieza de repostería'
+      },
+      en: {
+        title: 'Corporate events — SOLÉA',
+        description: 'A SOLÉA experience for company events, launches, openings, seminars and brand activations.',
+        menuLabel: 'Menu', menuOpenLabel: 'Open or close the menu', homeLabel: 'SOLÉA — home', languageLabel: 'Language',
+        instagramLabel: 'SOLÉA on Instagram', tiktokLabel: 'SOLÉA on TikTok', mainNavigationLabel: 'Main navigation',
+        footerNavigationLabel: 'Footer navigation', navConcept: 'The concept', navEvents: 'Events',
+        navHost: 'Host SOLÉA', navContact: 'Contact', eventsMenuLabel: 'Open the events menu',
+        privateMenuTitle: 'Private events', privateMenuButton: 'Explore private events',
+        professionalMenuTitle: 'Corporate events', professionalMenuButton: 'Explore corporate events',
+        quoteButton: 'Request a quote', referenceLabel: 'Illustrative visual', generatedNote: 'AI-generated illustrative image',
+        heroTitle: 'CORPORATE EVENTS', heroTagline: 'A distinctive food experience for company events, product launches and professional gatherings.',
+        introLabel: 'About corporate events',
+        introCopy: 'SOLÉA is available for open days, product launches, openings, seminars, team-building activities and brand activations.',
+        eventTypesLabel: 'Corporate event formats', eventOpenHouse: 'Open days',
+        eventLaunch: 'Product launches & openings', eventSeminar: 'Seminars & team building',
+        eventActivation: 'Brand activations', formulasTitle: 'Three proposals to delight your guests.',
+        originalDescription: 'Creamy real-fruit ice cream, prepared to order.',
+        signatureDescription: 'A more special creation, with toppings and original decoration.',
+        duoDescription: 'An irresistible pairing of a pastry with our creamy real-fruit ice cream, prepared to order.',
+        baseFeature: 'Choose a dairy or plant-based base.', fruitFeature: 'Up to 5 seasonal fruits.',
+        serveFeature: 'Served in a cup or cone.', toppingsFeature: 'Choose from gourmet toppings.',
+        decorFeature: 'Choose a special decoration: a chocolate style, edible details or a decorative creation.',
+        creamyFeature: 'Creamy real-fruit ice cream.',
+        pastryFeature: 'Choose a pastry: a cookie, doughnut or another sweet option, depending on the selection.',
+        duoToppingFeature: 'Choose toppings for the finishing touch.', optionLabel: 'Available option',
+        optionalTitle: 'Optional', optionalCopy: 'Custom cups with your event name or colours.',
+        capacityTitle: 'For events with 30 to 200 guests,', capacityCopy: 'depending on the format and service conditions.',
+        altPrivateMenu: 'Illustrative image of a private celebration', altProfessionalMenu: 'Illustrative image of a professional event',
+        altHero: 'AI-generated illustrative image of two professionals talking at an event with creamy ice cream; not a real SOLÉA event photograph.',
+        altOpenHouse: 'AI-generated illustration of a professional open day; not a real event photograph.',
+        altLaunch: 'AI-generated illustration of a product launch; not a real event photograph.',
+        altSeminar: 'AI-generated illustration of a seminar and team activity; not a real event photograph.',
+        altActivation: 'AI-generated illustration of an outdoor brand activation; not a real event photograph.',
+        altOriginal: 'AI-generated illustrative image of creamy fruit ice cream in a cup with strawberries',
+        altSignature: 'AI-generated illustrative image of creamy fruit ice cream with toppings',
+        altDuo: 'AI-generated illustrative image of creamy ice cream in a cup served with a pastry'
+      }
+    };
+
+    const languageButtons = document.querySelectorAll('[data-language]');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navigation = document.querySelector('#primary-navigation');
+    const eventsMenuTrigger = document.querySelector('#events-menu-trigger');
+    const eventsMenu = document.querySelector('#events-menu');
+
+    function setLanguage(language, persist = true) {
+      const selected = language === 'en' ? 'en' : 'es';
+      const strings = copy[selected];
+      document.documentElement.lang = selected;
+      document.title = strings.title;
+      document.querySelector('meta[name="description"]').content = strings.description;
+      document.querySelectorAll('[data-i18n]').forEach((element) => {
+        const key = element.dataset.i18n;
+        if (strings[key]) element.textContent = strings[key];
+      });
+      document.querySelectorAll('[data-i18n-alt]').forEach((element) => {
+        const key = element.dataset.i18nAlt;
+        if (strings[key]) element.alt = strings[key];
+      });
+      document.querySelectorAll('[data-i18n-aria]').forEach((element) => {
+        const key = element.dataset.i18nAria;
+        if (strings[key]) element.setAttribute('aria-label', strings[key]);
+      });
+      languageButtons.forEach((button) => {
+        const active = button.dataset.language === selected;
+        button.classList.toggle('is-active', active);
+        button.setAttribute('aria-pressed', String(active));
+      });
+      if (persist) {
+        try { localStorage.setItem('solea-home-language', selected); } catch (_) { /* Keep the selected language for this page view. */ }
+      }
+    }
+
+    function closeMenu() {
+      navigation.classList.remove('is-open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    }
+    function closeEventsMenu() {
+      eventsMenu.hidden = true;
+      eventsMenuTrigger.setAttribute('aria-expanded', 'false');
+    }
+
+    languageButtons.forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.language)));
+    menuToggle.addEventListener('click', () => {
+      const open = menuToggle.getAttribute('aria-expanded') !== 'true';
+      closeEventsMenu();
+      menuToggle.setAttribute('aria-expanded', String(open));
+      navigation.classList.toggle('is-open', open);
+    });
+    navigation.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+      closeMenu();
+      closeEventsMenu();
+    }));
+    eventsMenuTrigger.addEventListener('click', () => {
+      const open = eventsMenuTrigger.getAttribute('aria-expanded') !== 'true';
+      eventsMenu.hidden = !open;
+      eventsMenuTrigger.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('click', (event) => {
+      if (!event.target.closest('.nav-dropdown')) closeEventsMenu();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') { closeEventsMenu(); closeMenu(); }
+    });
+
+    let initialLanguage = 'es';
+    try { if (localStorage.getItem('solea-home-language') === 'en') initialLanguage = 'en'; } catch (_) { /* Spanish is the default. */ }
+    setLanguage(initialLanguage, false);
+  </script>
+</body>
+</html>
