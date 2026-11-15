@@ -574,3 +574,12 @@
   }
 }
 
+
+/* IMAGE TEST: all photographic slots temporarily use /assets/images/formule_signature.png.
+   To change a photo later, edit the src attribute of its <img> in index.html. */
+.private-page .private-hero__image,
+.private-page .event-type__image-wrap img,
+.private-page .formula-card__photo > img,
+.private-page .nav-dropdown__media img {
+  display: block;
+}
