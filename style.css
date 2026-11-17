@@ -1887,3 +1887,17 @@
   }
 }
 
+
+
+/* Harmonisation des titres : même taille que « Tu helado, a tu manera. » */
+.home-page .editorial-section h2,
+.home-page .places-section__header h2 {
+  font-size: clamp(2.15rem, 4vw, 3.6rem);
+}
+
+@media (max-width: 700px) {
+  .home-page .editorial-section h2,
+  .home-page .places-section__header h2 {
+    font-size: clamp(2rem, 9vw, 2.65rem);
+  }
+}
