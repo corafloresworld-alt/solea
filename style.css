@@ -278,16 +278,16 @@
 }
 
 .home-page .nav-dropdown__panel {
-  width: min(560px, calc(100vw - 40px));
+  width: min(600px, calc(100vw - 40px));
   position: absolute;
   z-index: 30;
-  top: calc(100% + 22px);
-  left: clamp(170px, 12vw, 210px);
+  top: calc(100% + 6px);
+  left: 0;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
   padding: 12px;
-  border: 1px solid rgba(158, 6, 60, 0.12);
+  border: 2px solid var(--solea-burgundy);
   border-radius: 12px;
   background: var(--solea-cream);
   box-shadow: 0 18px 42px rgba(61, 42, 50, 0.18);
@@ -682,8 +682,8 @@
 }
 
 .home-page .offer-card__body h3 {
-  min-height: 2.35em;
-  margin-bottom: 8px;
+  min-height: 0;
+  margin-bottom: 4px;
   color: var(--solea-burgundy);
   font-family: "Euclid Circular A", Arial, sans-serif;
   font-size: clamp(1.16rem, 1.65vw, 1.48rem);
@@ -705,7 +705,7 @@
 }
 
 .home-page .offer-card__body p {
-  min-height: 2.9em;
+  min-height: 0;
   color: rgba(61, 42, 50, 0.78);
   font-size: 0.94rem;
   line-height: 1.5;
@@ -717,7 +717,8 @@
 
 .home-page .offer-card__action {
   min-height: 46px;
-  min-width: min(220px, 100%);
+  width: fit-content;
+  min-width: 0;
   max-width: 100%;
   align-self: flex-start;
   display: inline-flex;
@@ -865,6 +866,14 @@
   text-wrap: pretty;
 }
 
+.home-page .editorial-section__cta {
+  margin: clamp(24px, 2.6vw, 38px) auto 0;
+  min-width: 0;
+  display: inline-flex;
+  background: var(--solea-burgundy);
+  color: var(--solea-white);
+}
+
 .home-page .concept-feature {
   min-width: 0;
   display: flex;
@@ -968,7 +977,13 @@
 
 .home-page .places-section__header h2 {
   color: var(--solea-burgundy);
-  font-size: clamp(2rem, 3.3vw, 3.35rem);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.65rem, 2.8vw, 2.7rem);
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  text-transform: none;
   text-wrap: balance;
 }
 
@@ -1066,7 +1081,7 @@
 
 
 .home-page .places-card__caption {
-  min-height: 150px;
+  min-height: 0;
   padding: 16px 18px 20px;
   text-align: center;
 }
@@ -1748,7 +1763,7 @@
   }
 
   .home-page .places-card__caption {
-    min-height: 144px;
+    min-height: 0;
     padding: 14px 15px 18px;
   }
 
@@ -1768,6 +1783,10 @@
     margin-top: 20px;
     font-size: 1rem;
     line-height: 1.65;
+  }
+
+  .home-page .editorial-section__cta {
+    margin-top: 22px;
   }
 
   .home-page .gallery-strip {
