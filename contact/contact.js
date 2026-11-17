@@ -36,7 +36,7 @@
       offerSignatureTitle: 'SIGNATURE',
       offerSignatureDescription: 'Una creación más especial, con toppings y una decoración original.',
       offerDuoTitle: 'DÚO',
-      offerDuoDescription: 'Una propuesta que combina una pieza de repostería con nuestro helado cremoso de fruta natural.',
+      offerDuoDescription: 'Una propuesta irresistible que combina una pastelería con nuestro helado.',
       offerDuoDetails: 'Helado de fruta, pieza de repostería a elegir y toppings.',
       offerUndecided: 'Todavía no lo sé',
       offerOriginalAlt: 'Imagen ilustrativa generada de SOLÉA ORIGINAL; no es una fotografía real.',
