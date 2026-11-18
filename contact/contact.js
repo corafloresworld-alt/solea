@@ -6,7 +6,7 @@
       menuLabel: 'Menú', menuOpenLabel: 'Abrir o cerrar el menú', homeLabel: 'SOLÉA — inicio',
       languageLabel: 'Idioma', instagramLabel: 'Instagram de SOLÉA', tiktokLabel: 'TikTok de SOLÉA',
       mainNavigationLabel: 'Navegación principal', footerNavigationLabel: 'Navegación del pie de página',
-      navConcept: 'El concepto', navEvents: 'Eventos', navHost: 'Acoge SOLÉA', navContact: 'Contacto',
+      navConcept: 'El concepto', navEvents: 'Eventos & Catering', navHost: 'Colaborar con SOLÉA', navContact: 'Contacto',
       eventsMenuLabel: 'Abrir el menú de eventos', privateMenuTitle: 'Eventos privados',
       privateMenuButton: 'Ver eventos privados', professionalMenuTitle: 'Eventos profesionales',
       professionalMenuButton: 'Ver eventos profesionales', referenceLabel: 'Visual ilustrativo',
@@ -15,8 +15,8 @@
       quoteButton: 'Solicitar presupuesto', heroEyebrow: 'CONTACTO', heroTitle: 'Hablemos',
       heroCopy: '¿Tienes una pregunta o estás preparando un evento? Cuéntanos tu idea.',
       location: 'Costa del Sol , Costa de la Luz',
-      altCart: 'Imagen de referencia del carrito SOLÉA; no representa un evento real.',
-      cartReferenceNote: 'Visual de referencia', formEyebrow: 'CONTACTO & PRESUPUESTO',
+      altCart: 'Imagen ilustrativa del carrito SOLÉA en un entorno mediterráneo; no representa un evento real.',
+      formEyebrow: 'CONTACTO & PRESUPUESTO',
       formTitle: 'Cuéntanos tu proyecto',
       formIntro: 'Completa el formulario y nos pondremos en contacto contigo.',
       requiredNote: 'Los campos marcados con * son obligatorios.', nameLabel: 'Nombre',
@@ -37,7 +37,6 @@
       offerSignatureDescription: 'Una creación más especial, con toppings y una decoración original.',
       offerDuoTitle: 'DÚO',
       offerDuoDescription: 'Una propuesta irresistible que combina una pastelería con nuestro helado.',
-      offerDuoDetails: 'Helado de fruta, pieza de repostería a elegir y toppings.',
       offerUndecided: 'Todavía no lo sé',
       offerOriginalAlt: 'Imagen ilustrativa generada de SOLÉA ORIGINAL; no es una fotografía real.',
       offerSignatureAlt: 'Imagen ilustrativa generada de SOLÉA SIGNATURE; no es una fotografía real.',
@@ -57,7 +56,7 @@
       honeypotLabel: 'No rellenes este campo',
       eventOptions: {
         private: [
-          ['Boda', 'Boda'], ['Cumpleaños', 'Cumpleaños'], ['Bautizo', 'Bautizo'],
+          ['Boda', 'Boda'], ['Cumpleaños', 'Cumpleaños'], ['Bautizo', 'Bautizo'], ['Comunión', 'Comunión'],
           ['Celebración privada', 'Celebración privada'], ['Fiesta en villa', 'Fiesta en villa'],
           ['Otro evento privado', 'Otro evento privado']
         ],
@@ -75,7 +74,7 @@
       menuLabel: 'Menu', menuOpenLabel: 'Open or close the menu', homeLabel: 'SOLÉA — home',
       languageLabel: 'Language', instagramLabel: 'SOLÉA on Instagram', tiktokLabel: 'SOLÉA on TikTok',
       mainNavigationLabel: 'Main navigation', footerNavigationLabel: 'Footer navigation',
-      navConcept: 'The concept', navEvents: 'Events', navHost: 'Host SOLÉA', navContact: 'Contact',
+      navConcept: 'The concept', navEvents: 'Events & Catering', navHost: 'Collaborate with SOLÉA', navContact: 'Contact',
       eventsMenuLabel: 'Open the events menu', privateMenuTitle: 'Private events',
       privateMenuButton: 'Explore private events', professionalMenuTitle: 'Corporate events',
       professionalMenuButton: 'Explore corporate events', referenceLabel: 'Illustrative visual',
@@ -84,8 +83,8 @@
       quoteButton: 'Request a quote', heroEyebrow: 'CONTACT', heroTitle: 'Let’s talk',
       heroCopy: 'Have a question or planning an event? Tell us what you have in mind.',
       location: 'Tarifa, Cádiz and the surrounding area',
-      altCart: 'Reference image of the SOLÉA cart; it does not depict a real event.',
-      cartReferenceNote: 'Reference image', formEyebrow: 'CONTACT & ENQUIRIES',
+      altCart: 'Illustrative image of the SOLÉA cart in a Mediterranean setting; it does not depict a real event.',
+      formEyebrow: 'CONTACT & ENQUIRIES',
       formTitle: 'Tell us about your project',
       formIntro: 'Fill in the form and we’ll get back to you.',
       requiredNote: 'Fields marked with * are required.', nameLabel: 'Name',
@@ -102,13 +101,10 @@
       illustrativeImage: 'Illustrative image',
       offerOriginalTitle: 'EL ORIGINAL',
       offerOriginalDescription: 'Creamy real-fruit ice cream, prepared to order.',
-      offerOriginalDetails: 'Choose a base, up to five seasonal fruits, served in a cup or cone.',
       offerSignatureTitle: 'SIGNATURE',
       offerSignatureDescription: 'A more special creation with toppings and original decoration.',
-      offerSignatureDetails: 'Choose a base, up to five seasonal fruits, gourmet toppings and special decoration.',
       offerDuoTitle: 'DÚO',
       offerDuoDescription: 'A pairing of a bakery item and our creamy real-fruit ice cream.',
-      offerDuoDetails: 'Fruit ice cream, a bakery item of your choice, and toppings.',
       offerUndecided: 'I haven’t decided yet',
       offerOriginalAlt: 'AI-generated illustrative visual of SOLÉA ORIGINAL; not a real photograph.',
       offerSignatureAlt: 'AI-generated illustrative visual of SOLÉA SIGNATURE; not a real photograph.',
@@ -128,7 +124,7 @@
       honeypotLabel: 'Leave this field empty',
       eventOptions: {
         private: [
-          ['Boda', 'Wedding'], ['Cumpleaños', 'Birthday'], ['Bautizo', 'Christening'],
+          ['Boda', 'Wedding'], ['Cumpleaños', 'Birthday'], ['Bautizo', 'Christening'], ['Comunión', 'Communion'],
           ['Celebración privada', 'Private celebration'], ['Fiesta en villa', 'Villa party'],
           ['Otro evento privado', 'Other private event']
         ],
@@ -360,4 +356,5 @@
   try { if (localStorage.getItem('solea-home-language') === 'en') initialLanguage = 'en'; } catch (_) { /* Spanish is the default. */ }
   translate(initialLanguage, false);
 })();
+
 
