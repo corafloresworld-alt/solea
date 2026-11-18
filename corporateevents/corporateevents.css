@@ -33,7 +33,7 @@
 .corporate-page .private-hero__content {
   position: relative;
   width: 100%;
-  padding: 20px 24px 30px;
+  padding: 20px 24px 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,13 +68,13 @@
 .corporate-page .private-intro {
   width: min(var(--private-copy-width), calc(100% - 48px));
   margin: 0 auto;
-  padding: 35px 0 34px;
+  padding: 10px 0 24px;
   text-align: center;
 }
 
 .corporate-page .private-intro > p:last-child {
   max-width: 860px;
-  margin: 16px auto 0;
+  margin: 0 auto;
   color: var(--solea-ink);
   font-size: clamp(1rem, 1.35vw, 1.2rem);
   line-height: 1.7;
@@ -232,25 +232,12 @@
 }
 
 .corporate-page .formula-features {
-  position: relative;
   margin: 0 0 18px;
   padding: 0;
-  padding-top: 19px;
   display: grid;
   align-content: start;
   gap: 11px;
   list-style: none;
-}
-
-.corporate-page .formula-features::before {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 58px;
-  height: 1px;
-  background: rgba(158, 6, 60, 0.65);
-  content: "";
-  transform: translateX(-50%);
 }
 
 .corporate-page .formula-features li {
@@ -314,6 +301,10 @@
   line-height: 1.44;
 }
 
+.corporate-page .formula-option p + p {
+  margin-top: 4px;
+}
+
 .corporate-page .formula-option p::before {
   margin-right: 7px;
   color: var(--solea-burgundy);
@@ -325,7 +316,7 @@
   width: min(1080px, 100%);
   margin: 28px auto 18px;
   display: grid;
-  grid-template-columns: minmax(24px, 1fr) 42px minmax(0, auto) 42px minmax(24px, 1fr);
+  grid-template-columns: minmax(24px, 1fr) 42px minmax(0, auto) minmax(24px, 1fr);
   align-items: center;
   gap: 16px;
   color: var(--solea-burgundy);
@@ -397,7 +388,7 @@
   }
 
   .corporate-page .private-hero__content {
-    padding: 18px 22px 26px;
+    padding: 18px 22px 8px;
   }
 
   .corporate-page .private-hero__content h1 {
@@ -411,7 +402,7 @@
   }
 
   .corporate-page .private-intro {
-    padding-top: 28px;
+    padding-top: 10px;
   }
 
   .corporate-page .event-types {
@@ -462,11 +453,11 @@
 
     .corporate-page .private-intro {
     width: calc(100% - 36px);
-    padding: 30px 0 18px;
+    padding: 10px 0 18px;
   }
 
   .corporate-page .private-intro > p:last-child {
-    margin-top: 11px;
+    margin-top: 0;
     font-size: 0.96rem;
     line-height: 1.6;
   }
@@ -551,7 +542,6 @@
   .corporate-page .formula-features {
     gap: 11px;
     margin-bottom: 16px;
-    padding-top: 18px;
   }
 
   .corporate-page .formula-features li {
@@ -569,21 +559,22 @@
 
   .corporate-page .capacity-note {
     margin: 24px auto 19px;
-    grid-template-columns: 1fr 34px 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 
-  .corporate-page .capacity-note__rule:last-child {
-    display: none;
+  .corporate-page .capacity-note__rule {
+    width: min(220px, 60%);
+    margin: 0 auto;
   }
 
   .corporate-page .capacity-note > svg {
     width: 34px;
+    margin: 0 auto;
   }
 
   .corporate-page .capacity-note p {
-    grid-column: 1 / -1;
-    grid-row: 2;
+    grid-column: 1;
   }
 
   .corporate-page .capacity-note strong {
@@ -595,3 +586,4 @@
     max-width: 320px;
   }
 }
+
