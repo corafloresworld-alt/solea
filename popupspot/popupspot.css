@@ -75,7 +75,7 @@
 
 .partner-page .partner-benefits {
   padding: clamp(56px, 6.5vw, 90px) max(24px, calc((100vw - var(--partner-content-width)) / 2)) clamp(62px, 7vw, 96px);
-  background: var(--solea-cream);
+  background: #FCF4ED;
 }
 
 .partner-page .partner-section-heading {
@@ -97,6 +97,9 @@
 .partner-page .partner-benefit {
   min-width: 0;
   padding: clamp(28px, 3.1vw, 46px) clamp(22px, 2.6vw, 38px) clamp(32px, 3.5vw, 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
@@ -145,7 +148,7 @@
 }
 
 .partner-page .partner-gallery__grid {
-  width: min(var(--partner-content-width), 100%);
+  width: min(1120px, 100%);
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -245,6 +248,12 @@
     gap: 24px 18px;
   }
 
+  .partner-page .partner-gallery__item:nth-child(3) {
+    grid-column: 1 / -1;
+    width: min(100%, 520px);
+    justify-self: center;
+  }
+
   .partner-page .partner-gallery__media {
     height: clamp(230px, 34vw, 320px);
   }
@@ -321,7 +330,13 @@
   }
 
   .partner-page .partner-gallery__grid {
+    grid-template-columns: minmax(0, 1fr);
     gap: 18px 12px;
+  }
+
+  .partner-page .partner-gallery__item:nth-child(3) {
+    grid-column: auto;
+    width: auto;
   }
 
   .partner-page .partner-gallery__media {
