@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css?v=places-carousel-controls-centered-20261114">
+  <link rel="stylesheet" href="hero-animation.css?v=hero-scroll-20261118">
+  <script src="hero-animation.js?v=hero-scroll-20261118" defer></script>
 </head>
 <body class="home-page">
   <header class="site-header">
@@ -69,13 +71,14 @@
   </header>
 
   <main>
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <img class="hero__image" src="assets/images/hero-generated-reference.png" alt="Carrito SOLÉA en un entorno mediterráneo" data-i18n-alt="altHero" width="1672" height="941" fetchpriority="high">
-      <div class="hero__wash" aria-hidden="true"></div>
-      <div class="hero__content">
-        <p class="eyebrow hero__eyebrow" data-i18n="heroKicker">HELADOS DE FRUTA NATURAL</p>
-        <h1 id="hero-title"><img class="hero__logo" src="assets/images/solea_momentos.png" alt="SOLÉA" width="802" height="250"></h1>
-        <p class="hero__copy" data-i18n="heroCopy">Helados de fruta natural, preparados al momento.<br>Un toque diferente para tus eventos.</p>
+    <section class="hero-animation" id="top" aria-labelledby="hero-title" data-hero-animation>
+      <div class="hero-animation__stage" data-hero-stage>
+        <div class="hero-animation__brand">
+          <h1 id="hero-title"><img class="hero-animation__logo" src="assets/images/logo_complet2.png" alt="SOLÉA, Momentos que recordar" data-i18n-alt="heroLogoAlt" width="1128" height="296"></h1>
+          <p class="hero-animation__line" data-i18n="heroLineOne">Helados de fruta natural, hechos al momento.</p>
+          <p class="hero-animation__line" data-i18n="heroLineTwo">Un toque diferente para tus eventos.</p>
+        </div>
+        <img class="hero-animation__product" src="assets/images/image_animation.png" alt="Vasito SOLÉA con helado cremoso de fruta roja" data-i18n-alt="heroProductAlt" width="1149" height="1368" fetchpriority="high">
       </div>
     </section>
 
@@ -337,6 +340,10 @@
         navConcept: 'El concepto', navEvents: 'Eventos & Catering', navHost: 'Colaborar con SOLÉA', navContact: 'Contacto',
         eventsMenuLabel: 'Abrir el menú de eventos', privateMenuButton: 'Ver eventos privados', professionalMenuButton: 'Ver eventos profesionales',
         quoteButton: 'Solicitar presupuesto',
+        heroLineOne: 'Helados de fruta natural, hechos al momento.',
+        heroLineTwo: 'Un toque diferente para tus eventos.',
+        heroLogoAlt: 'SOLÉA, Momentos que recordar',
+        heroProductAlt: 'Vasito SOLÉA con helado cremoso de fruta roja',
         heroKicker: 'HELADOS DE FRUTA NATURAL',
         heroCopy: 'Helados de fruta natural, hecho al momento. Un toque diferente para tus eventos.',
         offerEyebrow: 'NUESTRA OFERTA', offerTitle: 'Vive Soléa a tu manera',
@@ -393,6 +400,10 @@
         navConcept: 'The concept', navEvents: 'Events', navHost: 'Host SOLÉA', navContact: 'Contact',
         eventsMenuLabel: 'Open the events menu', privateMenuButton: 'Explore private events', professionalMenuButton: 'Explore corporate events',
         quoteButton: 'Request a quote',
+        heroLineOne: 'Real-fruit ice cream, made fresh to order.',
+        heroLineTwo: 'A little something different for your events.',
+        heroLogoAlt: 'SOLÉA, Moments to remember',
+        heroProductAlt: 'SOLÉA cup with creamy red-fruit ice cream',
         heroKicker: 'REAL-FRUIT ICE CREAM',
         heroCopy: 'Real-fruit ice cream, prepared to order from a charming mobile cart.',
         offerEyebrow: 'OUR OFFER', offerTitle: 'Three ways to experience SOLÉA.',
