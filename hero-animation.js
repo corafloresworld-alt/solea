@@ -73,9 +73,8 @@
     const fadeDistance = Math.max(18, Math.min(48, stage.clientHeight * 0.06));
     let brandOpacity = 0;
 
-    if (productRect.bottom <= brandRect.top) {
-      brandOpacity = clamp((brandRect.top - productRect.bottom) / fadeDistance);
-    } else if (productRect.top >= brandRect.bottom) {
+    // Reveal only while the product is below the brand; once it passes above, keep the brand hidden.
+    if (productRect.top >= brandRect.bottom) {
       brandOpacity = clamp((productRect.top - brandRect.bottom) / fadeDistance);
     }
 
