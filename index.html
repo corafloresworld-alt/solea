@@ -4,14 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="assets/images/LOGO_SYMBOLE_MAIN.png">
   <meta name="theme-color" content="#FCF4ED">
   <meta name="description" content="Helados de fruta natural, preparados al momento. Descubre SOLÉA para eventos y establecimientos.">
   <title>SOLÉA — Helados de fruta natural hecho al momento</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=places-carousel-controls-centered-20261114">
-  <link rel="stylesheet" href="hero-animation.css?v=hero-scroll-20261118">
+  <link rel="stylesheet" href="style.css?v=offer-title-visible-20261120">
+  <link rel="stylesheet" href="hero-animation.css?v=offer-title-visible-20261120">
   <script src="hero-animation.js?v=hero-scroll-20261118" defer></script>
 </head>
 <body class="home-page">
@@ -84,7 +85,7 @@
 
     <section class="offer-section section-pad" id="offer" aria-labelledby="offer-title">
       <div class="section-heading">
-        <h2 id="offer-title" data-i18n="offerTitle">Tres formas de vivir SOLÉA.</h2>
+        <h2 id="offer-title" data-i18n="offerTitle">Vive Soléa a tu manera</h2>
       </div>
 
       <div class="offer-grid">
@@ -222,7 +223,7 @@
     <section class="places-section" aria-labelledby="places-title">
       <div class="places-section__inner">
         <header class="places-section__header">
-          <h2 id="places-title">Soléa por aquí, Soléa por allá</h2>
+          <h2 id="places-title" data-i18n="placesTitle">Soléa por aquí, Soléa por allá</h2>
           <p class="places-section__intro" data-i18n="placesIntro">De la playa a tu próximo evento, SOLÉA va donde pasan las cosas. Descubre algunos de los lugares y momentos en los que nos gustaría encontrarnos contigo.</p>
         </header>
         <div class="places-carousel" id="places-carousel" role="region" aria-label="Posibles lugares para SOLÉA" data-i18n-aria="placesCarouselLabel" tabindex="0">
@@ -232,7 +233,7 @@
                 <img src="assets/images/solea_surf_shop_logo_corrige.png" alt="Surf shop y chariot SOLÉA junto al mar en Tarifa" data-i18n-alt="placesSurfAlt" width="800" height="1000" loading="lazy">
               </div>
               <div class="places-card__caption">
-                <h3>SURF &amp; LIFESTYLE</h3>
+                <h3 data-i18n="placesSurfTitle">SURF &amp; LIFESTYLE</h3>
                 <p class="places-card__location">Tarifa</p>
               </div>
             </article>
@@ -241,7 +242,7 @@
                 <img src="assets/images/Charrette Soléa au coucher du soleil 1.png" alt="Chariot SOLÉA en un camping o resort de la Costa de la Luz" data-i18n-alt="placesCampingAlt" width="800" height="1000" loading="lazy">
               </div>
               <div class="places-card__caption">
-                <h3>CAMPING &amp; RESORT</h3>
+                <h3 data-i18n="placesCampingTitle">CAMPING &amp; RESORT</h3>
                 <p class="places-card__location">Costa de la Luz</p>
               </div>
             </article>
@@ -251,7 +252,7 @@
 
               </div>
               <div class="places-card__caption">
-                <h3>AFTER THE BEACH</h3>
+                <h3 data-i18n="placesBeachTitle">AFTER THE BEACH</h3>
                 <p class="places-card__location">Bolonia</p>
               </div>
             </article>
@@ -260,7 +261,7 @@
                 <img src="assets/images/pool.png" alt="Carrito SOLÉA en una celebración junto a una piscina en Marbella" data-i18n-alt="placesPoolAlt" width="800" height="1000" loading="lazy">
               </div>
               <div class="places-card__caption">
-                <h3>CELEBRACION</h3>
+                <h3 data-i18n="placesPoolTitle">CELEBRACION</h3>
                 <p class="places-card__location">Marbella</p>
               </div>
             </article>
@@ -269,7 +270,7 @@
                 <img src="assets/images/bandeau-pub.png" alt="Carrito SOLÉA como posible expositor en un evento local de Estepona" data-i18n-alt="placesPopupAlt" width="800" height="1000" loading="lazy">
               </div>
               <div class="places-card__caption">
-                <h3>EVENTOS &amp; POP-UP</h3>
+                <h3 data-i18n="placesPopupTitle">EVENTOS &amp; POP-UP</h3>
                 <p class="places-card__location">Estepona</p>
               </div>
             </article>
@@ -364,6 +365,8 @@
         stepFourTitle: 'El toque final', stepFourCopy: 'Añade un topping si te apetece.',
         editorialTitle: 'Una experiencia que viene a ti',
         editorialCopy: 'SOLÉA no tiene un lugar fijo. Somos un carrito móvil que lleva helados de fruta real a bodas, celebraciones, eventos y espacios especiales.',
+        placesTitle: 'Soléa por aquí, Soléa por allá',
+        placesSurfTitle: 'SURF & LIFESTYLE', placesCampingTitle: 'CAMPING & RESORT', placesBeachTitle: 'AFTER THE BEACH', placesPoolTitle: 'CELEBRACION', placesPopupTitle: 'EVENTOS & POP-UP',
         placesIntro: 'Siempre en movimiento, encuéntranos en tus lugares favoritos.',
         placesControlsLabel: 'Controles del carrusel', placesPreviousLabel: 'Ver lugares anteriores', placesNextLabel: 'Ver más lugares', placesCarouselLabel: 'Posibles lugares para SOLÉA',
         placesSurfCopy: 'Una posible parada junto al mar, entre olas y buena energía.',
@@ -392,51 +395,53 @@
         altPrivateMenu: 'Imagen de un evento privado', altProfessionalMenu: 'Imagen de un evento profesional'
       },
       en: {
-        title: 'SOLÉA — Real-fruit ice cream, prepared to order',
-        description: 'Real-fruit ice cream, prepared to order. Discover SOLÉA for events and venue partnerships.',
+        title: 'SOLÉA — Ice cream made with real fruit',
+        description: 'Ice cream made with real fruit, prepared fresh to order. Discover SOLÉA for events and venues.',
         menuLabel: 'Menu', menuOpenLabel: 'Open or close the menu',
         homeLabel: 'SOLÉA — home', languageLabel: 'Language', instagramLabel: 'SOLÉA on Instagram', tiktokLabel: 'SOLÉA on TikTok',
         mainNavigationLabel: 'Main navigation', footerNavigationLabel: 'Footer navigation',
-        navConcept: 'The concept', navEvents: 'Events', navHost: 'Host SOLÉA', navContact: 'Contact',
+        navConcept: 'The concept', navEvents: 'Events & Catering', navHost: 'Partner with SOLÉA', navContact: 'Contact',
         eventsMenuLabel: 'Open the events menu', privateMenuButton: 'Explore private events', professionalMenuButton: 'Explore corporate events',
         quoteButton: 'Request a quote',
-        heroLineOne: 'Real-fruit ice cream, made fresh to order.',
+        heroLineOne: 'Ice cream made with real fruit, prepared fresh to order.',
         heroLineTwo: 'A little something different for your events.',
         heroLogoAlt: 'SOLÉA, Moments to remember',
         heroProductAlt: 'SOLÉA cup with creamy red-fruit ice cream',
         heroKicker: 'REAL-FRUIT ICE CREAM',
-        heroCopy: 'Real-fruit ice cream, prepared to order from a charming mobile cart.',
-        offerEyebrow: 'OUR OFFER', offerTitle: 'Three ways to experience SOLÉA.',
-        privateCardTitle: 'PRIVATE EVENTS', privateCardCopy: 'Weddings, celebrations, birthdays...',
-        professionalCardTitle: 'CORPORATE EVENTS', professionalCardCopy: 'Company events, launches, team building...',
-        venueCardTitle: 'HOST SOLÉA', venueCardCopy: 'Campsites, hotels, beach clubs, resorts...',
-        privateCardCta: 'Discover the offer', professionalCardCta: 'Discover the offer', venueCardCta: 'Partner with SOLÉA',
+        heroCopy: 'Ice cream made with real fruit, prepared fresh to order. A different touch for your events.',
+        offerEyebrow: 'OUR OFFER', offerTitle: 'Experience SOLÉA your way',
+        privateCardTitle: 'PRIVATE EVENTS', privateCardCopy: 'Weddings, celebrations, anniversaries...',
+        professionalCardTitle: 'CORPORATE EVENTS', professionalCardCopy: 'Company events, product launches, team building...',
+        venueCardTitle: 'HOST SOLÉA', venueCardCopy: 'Campsites, beach clubs, shops, pop-up stores...',
+        privateCardCta: 'Discover', professionalCardCta: 'Discover', venueCardCta: 'Partner with SOLÉA',
         privateCardLinkLabel: 'Discover the private events offer',
         professionalCardLinkLabel: 'Discover the corporate events offer',
         venueCardLinkLabel: 'Partner with SOLÉA as a venue',
-        conceptEyebrow: 'THE CONCEPT', conceptTitle: 'A delicious, natural experience.',
-        conceptCopy: 'Real-fruit ice cream, prepared in front of your guests from a mobile cart. A visual, welcoming experience that can be tailored to each occasion.',
+        conceptEyebrow: 'THE CONCEPT', conceptTitle: 'Your ice cream, made fresh to order, right before your eyes.',
+        conceptCopy: 'At SOLÉA, we love keeping things simple and delicious: real fruit, a creamy base and all the pleasure of artisan ice cream. A fresh, indulgent combination that puts fruit at the heart of the flavour. Create your own ice cream and enjoy a combination made to your taste.',
         featureFruit: 'REAL FRUIT', featureRecipe: 'NATURAL RECIPES', featureMinute: 'MADE TO ORDER', featureUnique: 'A UNIQUE EXPERIENCE',
-        processEyebrow: 'HOW DOES IT WORK?', processTitle: 'Your ice cream, your creation.',
-        stepOneTitle: 'Choose your base', stepOneCopy: 'Dairy or plant-based, your choice.',
-        stepTwoTitle: 'Choose your fruit', stepTwoCopy: 'Fresh, seasonal fruit.',
-        stepThreeTitle: 'Watch it come together', stepThreeCopy: 'Prepared to order, right in front of you.',
-        stepFourTitle: 'Customise your ice cream', stepFourCopy: 'Add a topping if you like.',
-        editorialTitle: 'Your fruit. Your mix. Your moment.',
-        editorialCopy: 'Pick, mix and create your own ice cream. Real fruit, prepared in front of you in an experience where every combination feels special.',
-        placesIntro: 'From the beach to your next event, SOLÉA goes where the good moments happen. Discover the places and experiences where we could meet.',
+        processEyebrow: 'HOW DOES IT WORK?', processTitle: 'Your ice cream, your way.',
+        stepOneTitle: 'Choose your cream', stepOneCopy: 'Dairy or vegan cream — it’s up to you.',
+        stepTwoTitle: 'Choose your favourite fruits', stepTwoCopy: 'Fresh, seasonal fruit.',
+        stepThreeTitle: 'Watch it take shape!', stepThreeCopy: 'Your fruit is transformed into a creamy ice cream.',
+        stepFourTitle: 'The finishing touch', stepFourCopy: 'Add a topping if you like.',
+        editorialTitle: 'An experience that comes to you',
+        editorialCopy: 'SOLÉA has no fixed location. Our mobile cart brings ice cream made with real fruit to weddings, celebrations, events and special venues.',
+        placesTitle: 'SOLÉA here, SOLÉA there',
+        placesSurfTitle: 'SURF & LIFESTYLE', placesCampingTitle: 'CAMPSITE & RESORT', placesBeachTitle: 'AFTER A DAY AT THE BEACH', placesPoolTitle: 'CELEBRATION', placesPopupTitle: 'EVENTS & POP-UPS',
+        placesIntro: 'Always on the move, find us at some of your favourite places.',
         placesControlsLabel: 'Carousel controls', placesPreviousLabel: 'View previous places', placesNextLabel: 'View more places', placesCarouselLabel: 'Possible places for SOLÉA',
-        placesSurfCopy: 'A possible seaside stop, between the waves and good energy.',
+        placesSurfCopy: 'A possible stop by the sea, among the waves and good vibes.',
         placesCampingCopy: 'A refreshing pause that could complement a guest’s stay.',
         placesBeachCopy: 'An idea for enjoying a treat after a day by the sea.',
-        placesPoolCopy: 'A moment to share beside the pool.',
-        placesPopupCopy: 'A possible presence at markets, gatherings and pop-ups.',
+        placesPoolCopy: 'A moment to share by the pool.',
+        placesPopupCopy: 'A possible presence at markets, gatherings and pop-up events.',
         placesSurfAlt: 'Surf shop and SOLÉA cart by the sea in Tarifa',
         placesCampingAlt: 'SOLÉA cart at a campsite or resort on the Costa de la Luz',
-        placesBeachAlt: 'SOLÉA ice cream with the beach landscape of Bolonia',
+        placesBeachAlt: 'SOLÉA ice cream against the beach landscape of Bolonia',
         placesPoolAlt: 'SOLÉA cart at a poolside gathering in Marbella',
         placesPopupAlt: 'SOLÉA cart as a possible exhibitor at a local event in Estepona',
-        galleryImagesLabel: 'SOLÉA images', galleryTitle: 'Follow our moments on social media',
+        galleryImagesLabel: 'SOLÉA images', galleryTitle: 'Follow us on social media',
         altHero: 'SOLÉA cart in a Mediterranean setting',
         altPrivate: 'Image of a private celebration from the supplied mockup',
         altProfessional: 'Image of a professional gathering from the supplied mockup',
