@@ -554,6 +554,8 @@
 }
 
 .home-page .offer-section .section-heading {
+  position: relative;
+  z-index: 2;
   max-width: min(100%, 1100px);
 }
 
@@ -563,7 +565,8 @@
 
 .home-page .section-heading h2,
 .home-page .concept-section h2,
-.home-page .gallery-section h2 {
+.home-page .gallery-section h2,
+.home-page .editorial-section h2 {
   color: var(--solea-burgundy);
   font-size: clamp(2.15rem, 4vw, 3.6rem);
   text-wrap: balance;
@@ -572,7 +575,8 @@
 .home-page .offer-section .section-heading h2,
 .home-page .concept-section h2,
 .home-page .process-section .section-heading h2,
-.home-page .gallery-section h2 {
+.home-page .gallery-section h2,
+.home-page .editorial-section h2 {
   font-family: "Euclid Circular A", Arial, sans-serif;
   font-weight: 600;
   letter-spacing: 0.01em;
@@ -845,16 +849,6 @@
 .home-page .editorial-section__inner {
   max-width: 1280px;
   margin: 0 auto;
-}
-
-.home-page .editorial-section h2 {
-  color: var(--solea-burgundy);
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(2.2rem, 4.6vw, 4.2rem);
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  line-height: 1.12;
-  text-wrap: balance;
 }
 
 .home-page .editorial-section p {
@@ -1655,6 +1649,7 @@
   }
 
   .home-page .section-heading h2,
+  .home-page .editorial-section h2,
   .home-page .concept-section h2 {
     font-size: clamp(2rem, 9vw, 2.65rem);
   }
@@ -1775,10 +1770,6 @@
     padding: 48px 22px;
   }
 
-  .home-page .editorial-section h2 {
-    font-size: clamp(2rem, 8vw, 2.65rem);
-  }
-
   .home-page .editorial-section p {
     margin-top: 20px;
     font-size: 1rem;
@@ -1889,14 +1880,12 @@
 
 
 
-/* Harmonisation des titres : même taille que « Tu helado, a tu manera. » */
-.home-page .editorial-section h2,
+/* Le titre du carrousel conserve sa taille adaptée. */
 .home-page .places-section__header h2 {
   font-size: clamp(2.15rem, 4vw, 3.6rem);
 }
 
 @media (max-width: 700px) {
-  .home-page .editorial-section h2,
   .home-page .places-section__header h2 {
     font-size: clamp(2rem, 9vw, 2.65rem);
   }
