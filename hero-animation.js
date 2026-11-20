@@ -31,7 +31,7 @@
     );
     const initialOffset = window.innerHeight * 0.78;
     const growthDistance = initialOffset;
-    const exitDistance = (stageHeight + productHeight * maxScale) / 2 + 14;
+    const exitDistance = (stageHeight + productHeight * maxScale) / 2;
     const travel = growthDistance + exitDistance;
 
     hero.style.setProperty('--hero-scroll-distance', `${travel}px`);
