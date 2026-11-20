@@ -1,14 +1,18 @@
 .home-page .hero-animation {
+  --hero-stage-height: calc(100vh - var(--site-header-height, 84px));
+  --hero-section-overlap: 0px;
   --hero-scroll-distance: 150vh;
   position: relative;
-  min-height: calc(100vh - var(--site-header-height, 84px));
+  min-height: var(--hero-stage-height);
   background: #FCF4ED;
 }
 
 @supports (height: 100svh) {
   .home-page .hero-animation {
+    --hero-stage-height: calc(100svh - var(--site-header-height, 84px));
+    --hero-section-overlap: 0px;
     --hero-scroll-distance: 150svh;
-    min-height: calc(100svh - var(--site-header-height, 84px));
+    min-height: var(--hero-stage-height);
   }
 }
 
@@ -78,6 +82,7 @@
 
 .home-page .hero-animation--enhanced {
   height: calc(100vh - var(--site-header-height, 84px) + var(--hero-scroll-distance));
+  margin-bottom: calc(0px - var(--hero-section-overlap));
   min-height: 0;
 }
 
@@ -88,6 +93,8 @@
   min-height: 0;
   display: block;
   padding: 0;
+  z-index: 1;
+  background: transparent;
 }
 
 .home-page .hero-animation--enhanced .hero-animation__brand {
